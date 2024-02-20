@@ -1,0 +1,198 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeMyItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/mory91}{\Large Morteza Hosseini}} & Email : \href{mailto:mortezaho.1376@gmail.com}{mortezaho.1376@gmail.com}\\
+  \href{https://github.com/mory91}{https://github.com/mory91}
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Calgary}{Calgary, AB}
+      {MSc in Computer Science;  Thesis: Flow Prediction in Short Timegaps}{Sep. 2021 -- Mar. 2024}
+    \resumeSubheading
+      {Shahid Beheshti University}{Tehran, Iran}
+      {BEng in Computer Engineering; Thesis: Sequence Mining on Business Processes with DNN}{Sep. 2015 -- Jan. 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Vector Institute}{Toronto, ON} % Location
+    {Machine Learning Associate}{Jan 2024 - Present} % Date(s)
+    \resumeItemListStart
+      \resumeItem{EthicalAI}
+      {Joined as an MLA for a limited time project. Development and Deployment of machine learning models for risk assessment and forecasting for electrical utilities.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    {University of Calgary}{Calgary, AB} % Location
+    {Research Assistant}{Sep 2021 - Present} % Date(s)
+    \resumeItemListStart
+      \resumeItem{Network Performance Optimization}
+      {Enhanced network performance for distributed systems (e.g., machine learning platforms, Spark, storage engines) by accelerating monitoring processes and extracting, analyzing system traces for workload optimization.}
+      \resumeItem{Forecasting and Trace Analysis}
+      {Used Machine Learning techniques for time-series forecasting from system traces and utilized eBPF for low-level trace extraction, focusing on workloads like Spark and Distributed Deep Learning Training.}
+    \resumeItemListEnd
+
+
+
+  \resumeSubheading
+    {\href{https://divar.ir}{Divar}}{Tehran, Iran} % Location
+    {Team Leader}{Sep 2020 - Aug 2021} % Date(s)
+    \resumeItemListStart
+    \resumeItem{Real Estate Team}
+      {Directed Divar's real estate vertical team, leading a multidisciplinary team of 17, including software engineers, data scientists, and UX designers. Responsible for steering the team through technical challenges, enhancing technical quality, and ensuring timely project delivery.}
+    \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Software Engineer}{Oct 2018 - Aug 2020}
+      \resumeItemListStart
+        \resumeItem{Search and Submission}
+        {As a pivotal member of the infra team at Divar, led the architecture and ownership of the ad search and submission stack, optimizing processes to scale for increased user requests.}
+      \resumeItemListEnd
+
+      \resumeSubSubheading
+        {Intern}{Jun 2018 - Aug 2018} % Date(s)
+
+      \resumeSubheading
+        {Erixe}{Tehran, Iran} % Location
+        {Software Engineer}{Feb 2016 - Jun 2017} % Date(s)
+        \resumeItemListStart
+          \resumeItem{LakLak}
+          {Full Stack developer of LakLak , a social network for pregnant women.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Python, Go, C/C++, Javascript, SQL}
+     \hfill
+     \textbf{Technologies}{: Linux, eBPF, Docker, Kubernetes}
+     \hfill
+     \textbf{Libraries}{: PyTorch, CatBoost, Xgboost, Pandas, Numpy, vLLM, LangChain, Django, Flask}
+   }
+ \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Notable Work}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Flow Prediction in Short Timegaps}
+    {Paper accepted in INFOCOM ICCN 2024 as a part of my MSc Research}
+    \resumeSubItem{\href{https://github.com/mory91/ogomon}{Ogomon}}
+    {A tracing utility written in Go and used eBPF and bcc written as a part of my MSc research}
+    \resumeSubItem{\href{https://www.coursera.org/account/accomplishments/specialization/certificate/T9ULQAUEZ68D}{Deep Learning Specialization}}
+    {Completed the 5 course of Specialization by Coursera, mastering neural networks and optimization techniques, and applied them to real-world tasks like speech recognition and NLP using Python and TensorFlow.}
+    \resumeSubItem{\href{https://github.com/mory91/bthesis}{Bachelor Thesis Project}}
+    {Finding bottlenecks of business processes using LSTM architecture.}
+    \resumeSubItem{\href{https://github.com/mory91/vbs}{Virtual Background System}} % Event
+    {Best Project of Divar Internal Hackathon. Applying different filters on the output of computer's camera and create a input for video conferencing applications. Filters are in different type, from simple canny to a full background extraction with BodyPix model. }
+    \resumeSubItem{Web Testing Framework}
+    {a Project for the ICT ministry of Iran. Used python and selenium to create tests for web pages visually and generating reports on test results. It was mainly developed to test government websites}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
